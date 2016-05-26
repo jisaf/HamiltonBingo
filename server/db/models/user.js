@@ -15,7 +15,7 @@ var schema = new mongoose.Schema({
         ref: 'User'
     }],
     board: {
-        type: [Schema.Types.Mixed]
+        type: [mongoose.Schema.Types.Mixed]
     }
 });
 
