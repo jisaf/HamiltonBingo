@@ -16,6 +16,10 @@ var schema = new mongoose.Schema({
     }],
     board: {
         type: [mongoose.Schema.Types.Mixed]
+    },
+    isAdmin: {
+        type: Boolean,
+        default: false
     }
 });
 
