@@ -1,11 +1,9 @@
-<div layout="row">
-   <div flex>B</div>
-   <div flex>I</div>
-   <div flex>N</div>
-   <div flex>G</div>
-   <div flex>O</div>
+<div layout="row" layout-align="center center">
+   <div flex ng-repeat="letter in tonys"><h1>{{letter}}</h1></div>
 </div>
-<div ng-repeat="row in rows" layout="row">
-   <div ng-repeat="col in row" flex class="col"></div>
+<div class="clearfix board">
+   <div ng-repeat="row in rows" layout="row" class="bingoRow" layout-align="center center">
+      <div ng-repeat="col in row" flex class="bingoCol" layout-align="center center">{{col}}</div>
+   </div>
 </div>
 
