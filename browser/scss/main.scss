@@ -21,7 +21,7 @@ body {
 }
 
 .bingoCol {
-   height: 20vw;
+   height: calc(20vw - 10px);
    border: 1px solid black;
 }
 
