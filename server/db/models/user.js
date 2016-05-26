@@ -4,11 +4,18 @@ var mongoose = require('mongoose');
 var _ = require('lodash');
 
 var schema = new mongoose.Schema({
+    name: {
+        type: String
+    },
+    photo: {
+        type: String
+    },
     email: {
         type: String
     },
     facebook: {
-        id: String
+        id: String,
+        refreshToken: String
     },
     friends: [{
         type: mongoose.Schema.Types.ObjectId,
