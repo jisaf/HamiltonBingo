@@ -11,7 +11,7 @@ core.factory('BingoFactory', function($http, $log){
     factory.generate = () => {
         let board = [['','','','',''],['','','','',''],['','','','',''],['','','','',''],['','','','','']]; // set up an empty board
         board = board.map(row => row.map(e => ({event: e, status: false})));
-        board[2][2].event = 'FREE SPACE';
+        board[2][2].event = 'assets/hamStar.png';
         board[2][2].status = true;
         for (let i = 0; i<awards.length; i++){ // go through all the awards
             let x = generatePosition(); // pick a random position on the board

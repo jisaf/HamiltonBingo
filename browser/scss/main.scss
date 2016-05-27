@@ -29,11 +29,16 @@ body {
 }
 
 .board {
-   padding: 5px;
+   margin: 5px;
+   background-image: url("assets/ham.png");
 }
 
 .fill {
-  background-color: red;
+  background-color: none;
+}
+
+.unfill {
+  background-color: white;
 }
 
 .bingo {
@@ -41,6 +46,10 @@ body {
   font-weight: bold;
 }
 
-.responsive {
+.medallion {
   height: 5vh;
+}
+
+.responsive {
+  height: 100%;
 }

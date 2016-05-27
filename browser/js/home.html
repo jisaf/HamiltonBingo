@@ -1,12 +1,15 @@
 <div layout="row" layout-align="center center">
    <div flex ng-repeat="letter in tonys" class="bingo">
       <span ng-if="letter.length === 1">{{letter}}</span>
-      <img ng-if="letter.length > 1" ng-src="{{letter}}" class="responsive">
+      <img ng-if="letter.length > 1" ng-src="{{letter}}" class="medallion">
    </div>
 </div>
 <div class="board">
    <div ng-repeat="row in rows" layout="row" class="bingoRow" layout-align="center center">
-      <div ng-repeat="square in row" flex class="bingoCol" layout="row" layout-align="center center" ng-class="{fill: square.status}" ng-click="fill(square)"><div>{{square.event}}</div></div>
+      <div ng-repeat="square in row" flex class="bingoCol" layout="row" layout-align="center center" ng-class="{fill: square.status, unfill: !square.status}" ng-click="fill(square)">
+         <div ng-if="square.event !== 'assets/hamStar.png'">{{square.event}}</div>
+         <img ng-if="square.event === 'assets/hamStar.png'" ng-src="{{square.event}}" class="responsive">
+      </div>
    </div>
 </div>
 

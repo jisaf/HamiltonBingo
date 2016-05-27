@@ -3,7 +3,7 @@ core.controller('HomeCtrl', function ($scope, BingoFactory) {
    $scope.rows = BingoFactory.generate();
 
    $scope.fill = function (square) {
-      if(square.event !== 'FREE SPACE') square.status = !square.status;
+      if(!/\//.test(square.event)) square.status = !square.status;
    }
 
 });
