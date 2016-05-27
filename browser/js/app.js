@@ -1,5 +1,6 @@
 'use strict';
-window.app = angular.module('HamiltonBingo', ['fsaPreBuilt', 'ui.router', 'ui.bootstrap', 'ngAnimate']);
+    let core = angular.module('core', ['fsaPreBuilt', 'ui.router', 'ui.bootstrap', 'ngAnimate', 'ngMaterial', 'ngAria'])
+window.app = angular.module('HamiltonBingo', ['core']);
 
 app.config(function ($urlRouterProvider, $locationProvider) {
     // This turns off hashbang urls (/#about) and changes it to something normal (/about)
