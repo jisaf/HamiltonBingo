@@ -23,8 +23,24 @@ body {
 .bingoCol {
    height: calc(20vw - 10px);
    border: 1px solid black;
+   &:focus {
+    outline: none;
+   }
 }
 
 .board {
    padding: 5px;
+}
+
+.fill {
+  background-color: red;
+}
+
+.bingo {
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+.responsive {
+  height: 5vh;
 }
