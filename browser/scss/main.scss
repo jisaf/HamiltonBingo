@@ -5,6 +5,7 @@
 body {
   background: #fdfdfd;
   padding-top: 15px;
+  text-align: center;
 }
 
 @mixin clearfix {
@@ -15,6 +16,40 @@ body {
   }
 }
 
-.col {
-   height: 50px;
+.bingoRow {
+   position: relative;
+}
+
+.bingoCol {
+   height: calc(20vw - 10px);
+   border: 1px solid black;
+   &:focus {
+    outline: none;
+   }
+}
+
+.board {
+   margin: 5px;
+   background-image: url("assets/ham.png");
+}
+
+.fill {
+  background-color: none;
+}
+
+.unfill {
+  background-color: white;
+}
+
+.bingo {
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+.medallion {
+  height: 5vh;
+}
+
+.responsive {
+  height: 100%;
 }

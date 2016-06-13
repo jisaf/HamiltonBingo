@@ -1,5 +1,5 @@
 'use strict';
-    let core = angular.module('core', ['fsaPreBuilt', 'ui.router', 'ui.bootstrap', 'ngAnimate', 'ngMaterial', 'ngAria'])
+let core = angular.module('core', ['fsaPreBuilt', 'ui.router', 'ui.bootstrap', 'ngAnimate', 'ngMaterial', 'ngAria'])
 window.app = angular.module('HamiltonBingo', ['core']);
 
 app.config(function ($urlRouterProvider, $locationProvider) {

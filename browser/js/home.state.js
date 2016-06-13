@@ -1,4 +1,4 @@
-app.config(function ($stateProvider) {
+core.config(function ($stateProvider) {
     $stateProvider.state('home', {
         url: '/',
         templateUrl: 'js/home.html',
