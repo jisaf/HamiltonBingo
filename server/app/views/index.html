@@ -18,6 +18,29 @@
     <script src="/main.js"></script>
 </head>
 <body ng-app="HamiltonBingo">
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '838686406265969',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+     FB.ui({method: 'apprequests',
+      message: 'YOUR_MESSAGE_HERE'
+    }, function(response){
+      console.log(response);
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+</script>
     <div id="main" ui-view></div>
 </body>
 </html>
